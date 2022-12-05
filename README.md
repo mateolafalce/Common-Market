@@ -1,2 +1,2 @@
-# SOLotery
-The SOLotery program running in Solana.
+# Common Market
+The Common Market program.
