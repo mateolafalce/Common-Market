@@ -17,7 +17,7 @@ describe("Initialize a sell", async () => {
     const tx = await program.methods.sell(
       "ñ",
       "ñ",
-      new anchor.BN(1),
+      new anchor.BN(2),
       new anchor.BN(5000),
       "ñ"
     )

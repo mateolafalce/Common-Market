@@ -6,7 +6,7 @@ pub mod errors;
 pub mod instructions;
 pub mod state;
 
-declare_id!("Cm1A1eSrCVbKmpcM944cMgDMbWBsDq9c1tyD1sKwJD1G");
+declare_id!("Feq7uizX22FRXktRLHrdUZAQxbSht5zhTK9nnut1sGbE");
 
 #[program]
 pub mod commonmarket {

@@ -11,7 +11,7 @@ pub fn main_account(
     let (_pda, bump) = Pubkey::find_program_address(&[b"Main Account"], ctx.program_id);
     main_account.bump_original = bump;
     main_account.transactions = 0;
-    main_account.offers = 0;
+    main_account.active_offers = 0;
     Ok(())
 }
 

@@ -17,10 +17,13 @@ describe("Exchange", () => {
           systemProgram: anchor.web3.SystemProgram.programId,
         }).rpc();
     //const AccountData = await program.account.accountModel.fetch(Account);
+    const SellAccount = await program.account.sell.fetch(Offer);
     console.log("---------------------------------------------") 
     console.log("Your transaction signature", tx);
     console.log("---------------------------------------------")
     console.log("You buy: ", amount.toNumber().toString(), "of",Offer.toBase58().toString())
+    console.log("---------------------------------------------")
+    console.log("Actual offer: ", SellAccount.supply.toString())
     console.log("---------------------------------------------")
     });
 })

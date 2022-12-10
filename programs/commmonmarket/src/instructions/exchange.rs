@@ -30,6 +30,9 @@ pub fn exchange(
         main_account.transactions += 1;
         let offer: &mut Account<Sell> = &mut ctx.accounts.offer;
         offer.supply -= supply;
+        if offer.supply == 0 {
+            main_account.active_offers -= 1;
+        }
         Ok(())
     }
 

@@ -5,6 +5,7 @@ pub struct MainAccount {
     pub bump_original: u8,       // 1
     pub transactions: u64,       // 8
     pub offers: u64,             // 8
+    pub active_offers: u64,      // 8
 }
 
 #[account]
@@ -24,5 +25,5 @@ impl Sell {
 }
 
 impl MainAccount {
-    pub const SIZE: usize =  1 + 8 + 8;
+    pub const SIZE: usize =  1 + 8 + 8 + 8;
 }
