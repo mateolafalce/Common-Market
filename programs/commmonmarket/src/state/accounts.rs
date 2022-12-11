@@ -12,7 +12,8 @@ pub struct MainAccount {
 pub struct Sell { 
     pub bump_original: u8,       // 1
     pub pubkey: Pubkey,          // 32
-    pub seed: u64,               // 8 
+    pub seed: u64,               // 8
+    pub active: bool,            // 1 
     pub product: String,         // 4 + 27
     pub description: String,     // 4 + 200
     pub supply: u64,             // 4 + 8
@@ -21,7 +22,7 @@ pub struct Sell {
 }
 
 impl Sell {
-    pub const SIZE: usize =  1 + 32 + 8 + 4 + 27 + 4 + 200 + 4 + 8 + 4 + 8 + 4 + 900;
+    pub const SIZE: usize =  1 + 32 + 8 + 1 + 4 + 27 + 4 + 200 + 4 + 8 + 4 + 8 + 4 + 900;
 }
 
 impl MainAccount {

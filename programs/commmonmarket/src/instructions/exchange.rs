@@ -32,6 +32,7 @@ pub fn exchange(
         offer.supply -= supply;
         if offer.supply == 0 {
             main_account.active_offers -= 1;
+            offer.active = false
         }
         Ok(())
     }

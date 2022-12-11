@@ -2,7 +2,7 @@
 seeds = false
 skip-lint = false
 [programs.devnet]
-commonmarket = "Feq7uizX22FRXktRLHrdUZAQxbSht5zhTK9nnut1sGbE"
+commonmarket = "7N6EPRN8bWZBgnDhxShPbfDqrGXUjCDRvqiGTpaUtc33"
 
 [registry]
 url = "https://api.apr.dev"
@@ -16,3 +16,5 @@ create = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/MainAccount.ts"
 sell = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/Sell.ts"
 check = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/Check.ts"
 exchange = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/Exchange.ts"
+update = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/UpdateSupply.ts"
+delete = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/DeleteSell.ts"

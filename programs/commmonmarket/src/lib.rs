@@ -6,7 +6,7 @@ pub mod errors;
 pub mod instructions;
 pub mod state;
 
-declare_id!("Feq7uizX22FRXktRLHrdUZAQxbSht5zhTK9nnut1sGbE");
+declare_id!("7N6EPRN8bWZBgnDhxShPbfDqrGXUjCDRvqiGTpaUtc33");
 
 #[program]
 pub mod commonmarket {
@@ -39,5 +39,17 @@ pub mod commonmarket {
             ctx,
             supply
         )
+    }
+    pub fn update_supply(
+        ctx: Context<UpdateSupply>,
+        supply: u64
+    ) -> Result<()> {
+        instructions::update_supply::update_supply(
+            ctx,
+            supply
+        )
+    }
+    pub fn delete_sell(ctx: Context<DeleteSell>) -> Result<()> {
+        instructions::delete_sell::delete_sell(ctx)
     }
 }

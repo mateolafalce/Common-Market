@@ -28,8 +28,10 @@ pub fn sell(
         sell.supply = supply;
         sell.price = price;
         sell.ipfs_url = ipfs_url;
+        sell.active = true;
         let main_account: &mut Account<MainAccount> = &mut ctx.accounts.main_account;
         main_account.active_offers += 1;
+        main_account.offers += 1;
         Ok(())
     }
 

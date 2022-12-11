@@ -4,8 +4,8 @@ anchor.setProvider(provider);
 export const wallet = provider.wallet as anchor.Wallet;
 
 export const MainPDA = new anchor.web3.PublicKey(
-    "7vDEz34wRcwk9Uh19LvtxtcdtqBeg9EwqB6oMDTt9oSt"
+    "3C5kGxu33aJmr1NW7bqAuyLTde1jjnWBfnCYMHiqDqtb"
 );
 export const Offer = new anchor.web3.PublicKey(
-    "3xXhj3Te7T2T469unjx9J2EgZT4Azhnb2BnTcKbvxtp5"
+    "23RPaRHz6B1nkPMpzsxtbvXGr6jACgpGZAodtsGFu6wa"
 );
